@@ -20,4 +20,4 @@ typings/
 .node_repl_history
 .yarn-integrity
 .env
-etc/*.dist.json
+etc/config.json
