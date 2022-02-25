@@ -21,3 +21,4 @@ typings/
 .yarn-integrity
 .env
 etc/config.json
+etc/secret

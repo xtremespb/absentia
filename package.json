@@ -4,7 +4,9 @@
     "description": "Secure remote command runner",
     "main": "index.js",
     "scripts": {
-        "config": "node ./config.js"
+        "start": "node ./index.js",
+        "config": "node ./config.js",
+        "token": "node ./token.js"
     },
     "repository": {
         "type": "git",
@@ -23,8 +25,10 @@
     "homepage": "https://github.com/xtremespb/absentia#readme",
     "dependencies": {
         "fastify": "^3.27.2",
-        "fs-extra": "^10.0.0",
-        "pino": "^7.8.0"
+        "fs-extra": "^10.0.1",
+        "njwt": "^1.2.0",
+        "pino": "^7.8.0",
+        "secure-random": "^1.1.2"
     },
     "devDependencies": {
         "@babel/code-frame": "^7.16.7",

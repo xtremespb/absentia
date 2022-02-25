@@ -2,5 +2,8 @@
     "ip": "127.0.0.1",
     "port": 3001,
     "logLevel": "info",
-    "trustProxy": true
+    "trustProxy": true,
+    "commands": {
+        "echo": "echo 'hello world'"
+    }
 }
