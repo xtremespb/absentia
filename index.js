@@ -11,6 +11,7 @@ const config = require(path.resolve("etc", "config.json"));
         trustProxy: config.trustProxy,
         ignoreTrailingSlash: true
     });
+    fastify.register(require("fastify-favicon"));
     fastify.get("/execute/:id", routeExecute());
     fastify.listen(config.port, config.ip);
 })();

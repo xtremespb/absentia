@@ -49,6 +49,7 @@ module.exports = () => ({
         }
         const output = await execCommand(config.commands[id]);
         rep.send({
+            command: config.commands[id],
             output
         });
     }
