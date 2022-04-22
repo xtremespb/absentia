@@ -4,6 +4,6 @@
     "logLevel": "info",
     "trustProxy": true,
     "commands": {
-        "echo": "echo 'hello world'"
+        "echo": "echo 'hello world [param]'"
     }
 }

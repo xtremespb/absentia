@@ -24,7 +24,8 @@ const execCommand = async cmd => new Promise((resolve, reject) => {
 module.exports = () => ({
     async handler(req, rep) {
         const {
-            id
+            id,
+            p,
         } = req.params;
         const token = req.headers.authorization;
         rep.type("application/json");
@@ -32,6 +33,13 @@ module.exports = () => ({
             rep.code(400);
             rep.send({
                 error: "Missing command or authorization token",
+            });
+            return;
+        }
+        if (p && (typeof p !== "string" || !p.match(/^[a-z0-9]{0,16}/i))) {
+            rep.code(400);
+            rep.send({
+                error: "Invalid parameter",
             });
             return;
         }
@@ -47,6 +55,7 @@ module.exports = () => ({
             });
             return;
         }
+        config.commands[id] = config.commands[id].replace(/\[param\]/gm, (p || ""));
         const output = await execCommand(config.commands[id]);
         rep.send({
             command: config.commands[id],

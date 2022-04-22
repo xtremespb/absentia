@@ -12,6 +12,7 @@ const config = require(path.resolve("etc", "config.json"));
         ignoreTrailingSlash: true
     });
     fastify.register(require("fastify-favicon"));
-    fastify.get("/execute/:id", routeExecute());
+    fastify.get("/e/:id", routeExecute());
+    fastify.get("/p/:id/:p", routeExecute());
     fastify.listen(config.port, config.ip);
 })();

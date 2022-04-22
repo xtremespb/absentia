@@ -1,6 +1,6 @@
 {
     "name": "absentia",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Secure remote command runner",
     "main": "index.js",
     "scripts": {
@@ -24,25 +24,25 @@
     },
     "homepage": "https://github.com/xtremespb/absentia#readme",
     "dependencies": {
-        "fastify": "^3.27.2",
+        "fastify": "^3.28.0",
         "fastify-favicon": "^3.1.0",
-        "fs-extra": "^10.0.1",
+        "fs-extra": "^10.1.0",
         "njwt": "^1.2.0",
-        "pino": "^7.8.0",
+        "pino": "^7.10.0",
         "secure-random": "^1.1.2"
     },
     "devDependencies": {
         "@babel/code-frame": "^7.16.7",
-        "@babel/core": "^7.17.5",
+        "@babel/core": "^7.17.9",
         "@babel/eslint-parser": "^7.17.0",
         "@babel/plugin-proposal-class-properties": "^7.16.7",
         "@babel/plugin-proposal-object-rest-spread": "^7.17.3",
         "@babel/plugin-transform-async-to-generator": "^7.16.8",
         "@babel/plugin-transform-runtime": "^7.17.0",
         "@babel/preset-env": "^7.16.11",
-        "babel-loader": "^8.2.3",
-        "eslint": "^8.9.0",
+        "babel-loader": "^8.2.5",
+        "eslint": "^8.13.0",
         "eslint-config-airbnb-base": "^15.0.0",
-        "eslint-plugin-import": "^2.25.4"
+        "eslint-plugin-import": "^2.26.0"
     }
 }
